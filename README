@@ -28,6 +28,7 @@ To make this system work you will need to do the following:
 2. Make getSite.sh and sendSite.sh scripts. Again follow the examples
 3. chmod 400 your siterc file and place it in the $dev_bin_dir
 4. To pull an exact duplicate of your production site down onto your dev machine run getSite.sh
-5. To push a modified version of your dev site onto the production server run sendSite.sh
+5. Add pushDrupal.sh, pullDrupal.sh backup_drupal.sh and restore_drupal.sh to your path
+6. To push a modified version of your dev site onto the production server run sendSite.sh
 
 Enjoi!
