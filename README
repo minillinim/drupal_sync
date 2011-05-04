@@ -1,0 +1,33 @@
+README.txt
+
+Author: Mike Imelfort : mike_at_mikeimelfort_dot_com
+Copyright Mike Imelfort 2011.
+
+The drupal_sync program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+    See http://www.gnu.org/licenses/ for more details about this license
+
+DESCRIPTION:
+
+A set of scripts which can be used to sync dev and production versions of a drupal website.
+
+Only tested with drupal 6 but this doesn't make any use of drupal api's so technically it should work with any version of drupal...
+   ...perhaps even with different web technologies?
+
+To make this system work you will need to do the following:
+
+1. Make a siterc file. Follow the format of example.siterc
+2. Make getSite.sh and sendSite.sh scripts. Again follow the examples
+3. chmod 400 your siterc file and place it in the $dev_bin_dir
+4. To pull an exact duplicate of your production site down onto your dev machine run getSite.sh
+5. To push a modified version of your dev site onto the production server run sendSite.sh
+
+Enjoi!

@@ -1,6 +1,20 @@
 #!/bin/sh
 #
-# make a backup of a drupal installation
+# restore_drupal.sh
+# restore a backed up version of a drupal website
+#
+# Author: Mike Imelfort : mike_at_mikeimelfort_dot_com
+# Copyright Mike Imelfort 2011.
+#
+# The drupal_sync program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
 # REQUIRES:
 #
@@ -9,7 +23,12 @@
 # sql_pass      -- password for sql user
 # database_name -- name of the drupal database
 #
-# overwrites the existsing installation from a gzipped backup of the db in the backupdir. WARNING! can nuke your website!
+# overwrites the existsing installation from a gzipped backup of the db in the backupdir. 
+#
+# WARNING! can nuke your website!
+#
+# You could use this file to make backups of your drupal site
+# separate from the sync system
 #
 
 if [ $# = 0 ] ; then

@@ -1,0 +1,54 @@
+#!/bin/sh
+#
+# examplerc
+# Holds the identity information of the production and development servers
+#
+# Author: Mike Imelfort : mike_at_mikeimelfort_dot_com
+# Copyright Mike Imelfort 2011.
+#
+# The drupal_sync program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+
+# Production alias -- I ASSUME YOU WILL RUN THIS SCRIPT AS ROOT ON THE DEV SERVER!
+# assumes that you have set up an env variable like:
+# export SERVER_STRING='user@domain.org' 
+# ALSO set paswordless keys!
+#
+server_name="$SERVER_STRING"
+
+# COMMON -- unique name for the website
+site_name=""
+
+# SQL CREDENTIALS
+dev_db_name=""
+dev_db_user=""
+dev_db_pass=""
+
+production_db_name=""
+production_db_user=""
+production_db_pass=""
+
+# BACKUPS -- where backups will be stored on dev and production site
+dev_site_location=""
+dev_backup_location=""
+
+# ROOT DIR -- of the dev and production sites
+production_site_location=""
+production_backup_location=""
+
+# SCRIPTS -- the name of the backup and restore scripts (no need to change these)
+backup_script="backup_drupal.sh"
+restore_script="restore_drupal.sh"
+
+# PATH -- path to the above scripts on the dev and production servers
+dev_bin_dir=""
+production_bin_dir=""
+

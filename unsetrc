@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# unsetrc
+# unset all the info stored in siterc
+#
+# Author: Mike Imelfort : mike_at_mikeimelfort_dot_com
+# Copyright Mike Imelfort 2011.
+#
+# The drupal_sync program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+
+unset server_name
+unset site_name
+unset local_db_name
+unset local_db_user
+unset local_db_pass
+unset remote_db_name
+unset remote_db_user
+unset remote_db_pass
+unset local_site_location
+unset local_backup_location
+unset remote_site_location
+unset remote_backup_location
+unset backup_script
+unset restore_script
+unset local_bin_dir
+unset remote_bin_dir

@@ -1,17 +1,32 @@
 #!/bin/sh
 #
+# pushDrupal.sh
 # Dev vs production sync for a drupal website
 # Script to push from a dev machine to the production machine
 #
-# You can't call this script directly, you'll need to have it wrapped in
+# Author: Mike Imelfort : mike_at_mikeimelfort_dot_com
+# Copyright Mike Imelfort 2011.
+#
+# The drupal_sync program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# Dev vs production sync for a drupal website
+# Script to push from a dev machine to the production machine
+#
+# You can't really call this script directly, you'll need to have it wrapped in
 # some other sheel script which sets a whole bunch of environment variables 
 # and can also do a number of kludges specific to the site you are trying to sync.
 #
-# Michael Imelfort - May - 4 - 2011
-#
 
 if [ $# = 0 ] ; then
-echo ERROR: usage $0 rcfile unsetfile
+echo ERROR: usage $0 siterc unsetrc
 exit
 fi
 
